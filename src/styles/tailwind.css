@@ -1,6 +1,6 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
 :root {
   min-height: 100vh;
@@ -13,10 +13,13 @@
 @layer base {
   /* base styles */
   body {
-    background: #ebf0fa;
+    background: #e1e9f7;
     @apply text-gray-500 m-8;
   }
-  h1, h2 {
+  h1 {
+    @apply font-bold text-primary text-2xl;
+  }
+  h2 {
     @apply font-bold text-primary text-lg;
   }
   main {
@@ -71,6 +74,7 @@
   /* form styles */
   form {
     @apply 
+      mt-8
       pt-4 pb-8 px-7 
       bg-primary
       bg-opacity-5
@@ -142,22 +146,23 @@
   nav {
     @apply
       pb-4
-      border-b-2 border-gray-200
+      border-b-2 border-gray-700
       flex items-center gap-6
       my-10 mx-auto 
       max-w-5xl justify-end;
   }
   nav a, nav span {
-    @apply font-bold text-gray-500 text-lg;
+    @apply font-bold text-gray-400 text-lg;
   }
   nav a:hover,
   nav a.active {
-    @apply text-primary;
+    @apply text-gray-500;
   }
   main nav {
     @apply border-0;
   }
 
+  /* Line chart styles */
   .line-chart {
     margin: 2rem 0;
   }

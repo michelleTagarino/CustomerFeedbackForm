@@ -3,30 +3,10 @@
     {
       "name": "Michelle Tagarino",
       "email": "michellejoytagarino@gmail.com",
+      "rating": "5",
       "comment": "Lorem ipsum Triforce sit amet, Linkus Hyruleus tempus Ganondorf. Nunc ocarina sagittis quis Majoras Mask. Nulla in metus arcu. Suspendisse potenti. In vel mauris varius, consectetur Zora ipsum eget, Master Sword porttitor urna. Fusce elementum urna elit, eget eleifend velit consectetur eget. Integer vel lobortis ipsum, vitae auctor Ocarina of Time. Donec sed urna dapibus, interdum magna a, eleifend magna. Curabitur tincidunt enim a neque volutpat. Phasellus auctor magna vel nunc pretium, ut volutpat justo tristique. Pellentesque cursus convallis mauris, in tempus enim tincidunt vitae.",
-      "rating": 5,
-      "id": "1"
-    },
-    {
-      "name": "Michelle Tagarino",
-      "email": "michellejoytagarino@gmail.com",
-      "comment": "Test",
-      "rating": 0,
-      "id": "SKBdANN"
-    },
-    {
-      "name": "",
-      "email": "michellejoytagarino@gmail.com",
-      "comment": "s",
-      "rating": 0,
-      "id": "H849Ziu"
-    },
-    {
-      "name": "Michelle Tagarino",
-      "email": "michellejoytagarino@gmail.com",
-      "rating": "3",
-      "comment": "sdfsdf",
-      "id": "KY7Qpni"
+      "datePosted": "2023-10-06T12:52:25.705Z",
+      "id": "ngQAolF"
     }
   ]
 }

@@ -2,9 +2,9 @@
 
 import React, { useEffect, useRef } from 'react';
 import { Chart as ChartJS, ChartConfiguration } from 'chart.js/auto';
+import { calculateDistribution } from '../../../app/utils/calculate-distribution';
 import { chartConfiguration, colors, labels } from './chart-config';
-import Comment from '../../shared/interfaces/comment';
-import { calculateDistribution } from '@/app/utils/calculate-distribution';
+import Comment from '../../../app/shared/interfaces/comment';
 
 export default function LineChart(props: { comments: Comment[] }) {
   const { comments } = props;
@@ -18,9 +18,9 @@ export default function LineChart(props: { comments: Comment[] }) {
     }
     
     const gradient = ctx.createLinearGradient(0, 16, 0, 600);
-    gradient.addColorStop(0, colors.purple.half);
-    gradient.addColorStop(0.65, colors.purple.quarter);
-    gradient.addColorStop(1, colors.purple.zero);
+    gradient.addColorStop(0, colors.blue.half);
+    gradient.addColorStop(0.65, colors.blue.quarter);
+    gradient.addColorStop(1, colors.blue.zero);
 
     const configData = {
       labels,
@@ -31,9 +31,9 @@ export default function LineChart(props: { comments: Comment[] }) {
           data: calculateDistribution(comments),
           fill: true,
           borderWidth: 2,
-          borderColor: colors.purple.default,
+          borderColor: colors.blue.default,
           lineTension: 0.2,
-          pointBackgroundColor: colors.purple.default,
+          pointBackgroundColor: colors.blue.default,
           pointRadius: 3
         }
       ]

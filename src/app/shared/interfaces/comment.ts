@@ -4,4 +4,5 @@ export default interface Comment {
   email: string;
   rating: string;
   comment: string;
+  datePosted: Date;
 }
