@@ -4,24 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { Chart as ChartJS, ChartConfiguration } from 'chart.js/auto';
 import { chartConfiguration, colors, labels } from './chart-config';
 import Comment from '../../../shared/interfaces/comment';
-
-export const calculateDistribution = (data: Comment[]) => {
-  const ratingDistribution: number[] = [0, 0, 0, 0, 0];
-  
-  if (!data?.length) {
-    return ratingDistribution;
-  }
-
-  data.forEach((comment: Comment) => {
-    let rating: number = Number(comment.rating);
-
-    if (rating >= 1 && rating <= 5) {
-      ratingDistribution[rating - 1]++;
-    }
-  });
-
-  return ratingDistribution;
-};
+import { calculateDistribution } from '@/app/utils/calculate-distribution';
 
 export default function LineChart(props: { comments: Comment[] }) {
   const { comments } = props;
