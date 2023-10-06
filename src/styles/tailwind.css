@@ -1,4 +1,5 @@
 @tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -47,5 +48,89 @@
   }
   .card p {
     @apply my-4 text-sm leading-6;
+  }
+
+  /* form styles */
+  form {
+    @apply 
+      pt-4 pb-8 px-7 
+      bg-primary
+      bg-opacity-5
+      rounded-md 
+      block 
+      min-w-fit;
+  }
+  form input,
+  form textarea,
+  form select {
+    @apply 
+      mt-6 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-50 dark:border-gray-300 dark:placeholder-gray-300 dark:text-gray-900 dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+  form select {
+    @apply
+      text-gray-900 placeholder-gray-300;
+  }
+  form textarea {
+    resize: none;
+    flex: 1;
+  }
+  form button {
+    @apply
+      block ml-auto text-white bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+  }
+  form label span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 10px;
+  }
+  form label span.error {
+    margin: 0;
+    font-size: 10px;
+  }
+  form .container {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 1.75rem;
+  }
+  form .container--left,
+  form .container--right {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  @media (max-width: 640px) {
+    form .container {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}
+
+@layer components {
+  /* nav styles */
+  nav {
+    @apply
+      pb-4
+      border-b-2 border-gray-200
+      flex items-center gap-6
+      my-10 mx-auto 
+      max-w-5xl justify-end;
+  }
+  nav a, nav span {
+    @apply font-bold text-gray-500 text-lg;
+  }
+  nav a:hover,
+  nav a.active {
+    @apply text-primary;
+  }
+  main nav {
+    @apply border-0;
+  }
+
+  /* chart styles */
+  .line-chart {
+    margin: 2rem 0;
   }
 }
