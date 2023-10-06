@@ -9,6 +9,8 @@ A small application made with the React-based Next.js framework.
 
 ## Get Started
 
+**All of my code is in the develop branch!**
+
 First, install dependencies:
 
 ```bash
