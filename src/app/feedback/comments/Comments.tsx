@@ -11,6 +11,9 @@ const sortByDate = (a: Comment, b: Comment) => {
   return getTime(b.datePosted) - getTime(a.datePosted);
 };
 
+/**
+ * Lists the comments of all submitted reviews
+ */
 export default function Comments(props: { comments: Comment[], loading: boolean }) {
   const { comments, loading } = props;
   const sortedComments = comments.sort(sortByDate);

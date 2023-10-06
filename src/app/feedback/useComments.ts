@@ -3,6 +3,9 @@
 import { useEffect, useState } from "react";
 import Comment from "../shared/interfaces/comment";
 
+/**
+ * Hook to get comments from mock server
+ */
 export const useComments = (url: string) => {
   const [data, setData] = useState<Comment[]>([]);
   const [loading, setIsLoading] = useState(true);
