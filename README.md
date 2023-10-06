@@ -9,7 +9,13 @@ A small application made with the React-based Next.js framework.
 
 ## Get Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm i
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -22,6 +28,14 @@ npm run server
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Running tests
+
+I used Cypress for testing.
+
+```bash
+npx cypress open
+```
 
 ## Tools Used
 
