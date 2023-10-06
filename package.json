@@ -12,6 +12,7 @@
     "rebuild-styles": "postcss ./src/styles/tailwind.css -o src/styles/globals.css"
   },
   "dependencies": {
+    "chart.js": "^4.4.0",
     "json-server": "^0.17.4",
     "next": "13.5.4",
     "react": "^18",
