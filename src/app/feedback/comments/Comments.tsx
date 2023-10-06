@@ -16,7 +16,7 @@ export default function Comments(props: { comments: Comment[], loading: boolean 
       {!loading && comments.map((comment: Comment) => (
         <div key={comment.id} className="card my-5">
           <h3>{comment.email}</h3>
-          <p>{comment.comment.slice(0, 200)}...</p>
+          <p>{comment.comment}</p>
         </div>
       ))}
 

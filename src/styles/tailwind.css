@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind utilities;
-@tailwind components;
 
 :root {
   min-height: 100vh;
@@ -27,5 +26,26 @@
   }
   p > a {
     @apply text-primary underline;
+  }
+}
+
+@layer utilities {
+  /* card styles */
+  .card {
+    @apply 
+      bg-white 
+      shadow-sm 
+      rounded-md 
+      py-3 px-4 my-4 
+      relative 
+      overflow-hidden;
+  }
+  .card h3 {
+    @apply 
+      font-bold text-gray-700 text-sm 
+      mb-0;
+  }
+  .card p {
+    @apply my-4 text-sm leading-6;
   }
 }

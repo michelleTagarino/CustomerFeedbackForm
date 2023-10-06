@@ -3,7 +3,11 @@ import Navbar from './Navbar'
 
 describe('<Navbar />', () => {
   it('renders', () => {
-    // see: https://on.cypress.io/mounting-react
-    cy.mount(<Navbar />)
-  })
+    cy.mount(<Navbar />);
+  });
+
+  it('should contain "Feedback" nav bar link label', () => {
+    cy.mount(<Navbar />);
+    cy.get('a').should('contains.text', 'Feedback');
+  });
 })
