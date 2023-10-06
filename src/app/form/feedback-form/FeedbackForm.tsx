@@ -81,6 +81,7 @@ export default function FeedbackForm() {
 
               {/* Ratings field */}
               <select
+                data-cy="rating-field"
                 className={errors?.rating && "error"}
                 {...register("rating")}
               >
