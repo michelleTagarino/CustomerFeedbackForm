@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Comment from '../../../shared/interfaces/comment';
+import Comment from '../../shared/interfaces/comment';
 import Loading from '../../../app/loading';
 
 export default function Comments(props: { comments: Comment[], loading: boolean }) {

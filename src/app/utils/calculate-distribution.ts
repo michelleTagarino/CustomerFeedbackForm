@@ -1,4 +1,4 @@
-import Comment from "../../shared/interfaces/comment";
+import Comment from "../shared/interfaces/comment";
 
 /**
  * Calculates the count of each feedback rating

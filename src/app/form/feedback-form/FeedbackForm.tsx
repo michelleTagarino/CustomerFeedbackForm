@@ -5,6 +5,7 @@ import { FormProvider, SubmitHandler, useForm } from 'react-hook-form';
 import { useRouter } from 'next/navigation';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import APP_CONSTANTS from '../../../app/shared/constants/app-constants';
 
 const formSchema = z.object({
   name: z.string().min(1, 'Name is required'),
@@ -28,12 +29,16 @@ export default function FeedbackForm() {
   const onSubmitForm: SubmitHandler<FormSchemaType> = async (data)  => {
     const result = formSchema.safeParse(data);
     if (result.success) {
-      const res = await fetch("http://localhost:4000/comments", {
+      const bodyData = {
+        ...data,
+        datePosted: new Date()
+      };
+      const res = await fetch(APP_CONSTANTS.BASE_API_URL_MOCK, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(data)
+        body: JSON.stringify(bodyData)
       });
 
       if (res.ok) {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
-import Comment from "../../shared/interfaces/comment";
+import Comment from "../shared/interfaces/comment";
 
 export const useComments = (url: string) => {
   const [data, setData] = useState<Comment[]>([]);

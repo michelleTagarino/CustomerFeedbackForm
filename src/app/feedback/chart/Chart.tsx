@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Chart as ChartJS, ChartConfiguration } from 'chart.js/auto';
 import { chartConfiguration, colors, labels } from './chart-config';
-import Comment from '../../../shared/interfaces/comment';
+import Comment from '../../shared/interfaces/comment';
 import { calculateDistribution } from '@/app/utils/calculate-distribution';
 
 export default function LineChart(props: { comments: Comment[] }) {

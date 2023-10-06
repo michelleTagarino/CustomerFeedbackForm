@@ -1,6 +1,6 @@
 import React from 'react';
 import Comments from './Comments';
-import Comment from '../../../shared/interfaces/comment';
+import Comment from '../../shared/interfaces/comment';
 
 describe('<Comments />', () => {
   const loading = false;
