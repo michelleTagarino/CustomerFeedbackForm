@@ -387,7 +387,7 @@ video {
 }
   /* base styles */
   body {
-    background: #e1e9f7;
+    background: #ebf0fa;
     margin: 2rem;
     --tw-text-opacity: 1;
     color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -583,7 +583,6 @@ nav a:hover,
 main nav {
   border-width: 0px;
 }
-/* chart styles */
 .line-chart {
     margin: 2rem 0;
   }
@@ -597,6 +596,29 @@ main nav {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(12 17 66 / var(--tw-text-opacity));
+}
+/* button styles */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  border-radius: 0.125rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+button:hover {
+  --tw-bg-opacity: 0.9;
+}
+.btn-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 17 66 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 /* card styles */
 .card {
@@ -789,6 +811,57 @@ form .container--left,
     flex-direction: column;
     flex-grow: 1;
   }
+/* feedback styles */
+form label span.error {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
+}
+form input.error, 
+  form textarea.error, 
+  form select.error {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
+  padding: 0.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(127 29 29 / var(--tw-text-opacity));
+}
+form input.error::-moz-placeholder, form textarea.error::-moz-placeholder, form select.error::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-placeholder-opacity));
+}
+form input.error::placeholder, 
+  form textarea.error::placeholder, 
+  form select.error::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-placeholder-opacity));
+}
+form input.error:focus, 
+  form textarea.error:focus, 
+  form select.error:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(239 68 68 / var(--tw-ring-opacity));
+}
+@media (prefers-color-scheme: dark) {
+
+  form input.error, 
+  form textarea.error, 
+  form select.error {
+    --tw-border-opacity: 1;
+    border-color: rgb(248 113 113 / var(--tw-border-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  }
+}
 @media (max-width: 640px) {
     form .container {
       flex-direction: column;

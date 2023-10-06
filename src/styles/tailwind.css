@@ -13,7 +13,7 @@
 @layer base {
   /* base styles */
   body {
-    background: #e1e9f7;
+    background: #ebf0fa;
     @apply text-gray-500 m-8;
   }
   h1, h2 {
@@ -31,6 +31,24 @@
 }
 
 @layer utilities {
+  /* button styles */
+  button {
+    @apply 
+      px-3 py-2 
+      rounded-sm 
+      flex justify-between items-center gap-2
+      text-sm;
+  }
+  button:hover {
+    @apply bg-opacity-90;
+  }
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-900;
+  }
+
   /* card styles */
   .card {
     @apply 
@@ -100,6 +118,17 @@
     flex-grow: 1;
   }
 
+  /* feedback styles */
+  form label span.error {
+    @apply text-red-700
+  }
+  form input.error, 
+  form textarea.error, 
+  form select.error {
+    @apply
+      bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400;
+  }
+
   @media (max-width: 640px) {
     form .container {
       flex-direction: column;
@@ -129,7 +158,6 @@
     @apply border-0;
   }
 
-  /* chart styles */
   .line-chart {
     margin: 2rem 0;
   }
