@@ -1,4 +1,4 @@
-## Checkout.com Challenge - Customer Feedback Form
+## Simple Customer Feedback Form
 
 A small application made with the React-based Next.js framework.
 - A user is presented with a customer feedback form on the landing page.
@@ -8,8 +8,6 @@ A small application made with the React-based Next.js framework.
 - The user can also see a list of comments that were recently submitted.
 
 ## Get Started
-
-**All of my code is in the develop branch!**
 
 First, install dependencies:
 
@@ -33,7 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Running tests
 
-I used Cypress for testing.
+Cypress for testing.
 
 ```bash
 npx cypress open
